@@ -16,8 +16,9 @@ interface LoginUser {
 }
 
 interface UpdateUser {
-  username: string;
-  email: string;
+  username?: string;
+  email?: string;
+  avatar?: string;
 }
 
-export type {User, LoginUser, UpdateUser};
+export type { User, LoginUser, UpdateUser };

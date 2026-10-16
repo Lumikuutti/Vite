@@ -1,8 +1,8 @@
-import {fetchData} from './functions';
-import {UpdateResult} from './interfaces/UpdateResult';
-import {UploadResult} from './interfaces/UploadResult';
-import {LoginUser, UpdateUser, User} from './interfaces/User';
-import {apiUrl, uploadUrl} from './variables';
+import { fetchData } from './functions';
+import type { UpdateResult } from './interfaces/UpdateResult';
+import type { UploadResult } from './interfaces/UploadResult';
+import type { LoginUser, UpdateUser, User } from './interfaces/User';
+import { apiUrl, uploadUrl } from './variables';
 
 // PWA code
 
@@ -30,24 +30,24 @@ const emailTarget = document.querySelector('#email-target');
 const avatarTarget = document.querySelector('#avatar-target');
 
 // TODO: function to login
-const login = async (): Promise<LoginUser> => {};
+const login = async (): Promise<LoginUser> => { };
 
 // TODO: function to update user data
 const updateUserData = async (
   user: UpdateUser,
   token: string
-): Promise<UpdateResult> => {};
+): Promise<UpdateResult> => { };
 
 // TODO: function to add userdata (email, username and avatar image) to the
 // Profile DOM and Edit Profile Form
-const addUserDataToDom = (user: User): void => {};
+const addUserDataToDom = (user: User): void => { };
 
 // function to get userdata from API using token
-const getUserData = async (token: string): Promise<User> => {};
+const getUserData = async (token: string): Promise<User> => { };
 
 // TODO: function to check local storage for token and if it exists fetch
 // userdata with getUserData then update the DOM with addUserDataToDom
-const checkToken = async (): Promise<void> => {};
+const checkToken = async (): Promise<void> => { };
 
 // call checkToken on page load to check if token exists and update the DOM
 checkToken();

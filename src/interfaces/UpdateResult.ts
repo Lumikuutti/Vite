@@ -1,8 +1,8 @@
-import {User} from './User';
+import type { User } from './User';
 
 interface UpdateResult {
   message: string;
   data: User;
 }
 
-export type {UpdateResult};
+export type { UpdateResult };
